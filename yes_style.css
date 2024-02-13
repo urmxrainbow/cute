@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Cupid Love";
-    src: url("Cupid Love.ttf");
+    src: url("Cupid Love.woff2") format( 'woff2' );
 }
 
 body {

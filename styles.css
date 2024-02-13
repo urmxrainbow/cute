@@ -1,10 +1,11 @@
-@font-face {
+/*@font-face {
     font-family: "Bohemian Soul";
     src: url("Bohemian Soul.otf");
-}
+}*/
+
 @font-face {
     font-family: "Cupid Love";
-    src: url("Cupid Love.ttf");
+    src: url("Cupid Love.woff2") format( 'woff2' );
 }
 body {
     display: flex;
