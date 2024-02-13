@@ -37,6 +37,8 @@ body {
 .header_text {
     font-family: "Cupid Love", Arial, sans-serif;
     font-size: 70px;
+    font-weight:normal;
+    font-style:normal;
     color: rgb(76, 69, 69);
     text-align: center;
     margin-top: 20px;
