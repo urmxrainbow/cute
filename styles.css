@@ -4,8 +4,12 @@
 }*/
 
 @font-face {
-    font-family: "Cupid Love";
-    src: url("Cupid Love.woff2") format( 'woff2' );
+    font-family: 'Cupid Love';
+    src: url('CupidLove.woff2') format('woff2'),
+        url('CupidLove.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 body {
     display: flex;
