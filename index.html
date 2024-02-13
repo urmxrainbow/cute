@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./styles.css">
+        
+    </head> 
+    <body>
+        <div class="container">
+            <div >
+                <h2 class = "header_text">Will you be my Valentine</h2>
+            </div>
+            <div class="gif_container">
+                <img id="gif_container" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYnpwNmxuNDcyOGkyYWJhazlldDRvcHhnYzJzc2xhOHlvbGJlZmQ1dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/SvvfK2dco188Wk4ZTq/giphy.gif" alt="Cute animated illustration">
+            </div>
+            <div class = "buttons">
+                <button class="btn" id = "yesButton" onclick="nextPage()">Yes</button>
+                <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
+                <script>
+                    function nextPage() {
+                        window.location.href = "yes.html";
+                    }
+                
+                    var noButton = document.getElementById("noButton");
+                    var valentineImage = document.getElementById("gif_container");
+                
+                    var noTexts = ["Are you sure?", "WHAT did you just SAY???", "try AGAIN", "if u say NO again i gonna put virus on ur phone ", ];
+                    var imageSources = ["https://media.giphy.com/media/lPM06f2zvk94jBAzlP/giphy.gif", "https://media.giphy.com/media/m9XLXeXcVxlZX0Mfps/giphy.gif", "https://media.giphy.com/media/js0lEnHUd26FSJ2lyu/giphy.gif", "https://media.giphy.com/media/eHWUyxudOQGCulzFFR/giphy.gif"];
+                
+                    noButton.addEventListener("click", change);
+                
+                    function change() {
+                        var randomIndex = Math.floor(Math.random() * noTexts.length);
+                        var randomText = noTexts[randomIndex];
+                        noButton.innerText = randomText;
+                
+                        var i = Math.floor(Math.random() * 500);
+                        var j = Math.floor(Math.random() * 500);
+                        noButton.style.left = i + "px";
+                        noButton.style.top = j + "px";
+
+                        var currentWidth = yesButton.offsetWidth;
+                        var currentHeight = yesButton.offsetHeight
+                        yesButton.style.width = currentWidth + 30 + "px";
+                        yesButton.style.height = currentHeight + 10 + "px";
+                        var currentFontSize = parseFloat(window.getComputedStyle(yesButton).fontSize);
+                        var newFontSize = currentFontSize + 10;
+                        yesButton.style.fontSize = newFontSize + "px";
+
+                
+                        var randomImageIndex = Math.floor(Math.random() * imageSources.length);
+                        valentineImage.src = imageSources[randomImageIndex];
+                    }
+                </script>
+                
+            </div>
+        </div>
+        
+            
+        
+       
+    </body> 
+</html>
+
