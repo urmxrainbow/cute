@@ -40,7 +40,8 @@ body {
     text-align: center;
     margin-top: 25px;
     margin-bottom: 0px;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
+    font-weight: normal;
 }
 
 body, #noButton, #yesButton, .header_text {
