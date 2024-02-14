@@ -1,16 +1,18 @@
-/*@font-face {
-    font-family: "Bohemian Soul";
-    src: url("Bohemian Soul.otf");
-}*/
 
+/*
+@font-face {
+    font-family: "Bohemian Soul";
+    src: url("Cupid Love.");
+}   */
 @font-face {
     font-family: 'Cupid Love';
-    src: url('CupidLove.woff2') format('woff2'),
-        url('CupidLove.woff') format('woff');
+    src: url('fonts/CupidLove.woff2') format('woff2'),
+         url('fonts/CupidLove.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
 }
+
+
 body {
     display: flex;
     justify-content: center;
@@ -21,7 +23,6 @@ body {
 
 #noButton {
     position: absolute;
-    font-family: "Cupid Love", Arial, sans-serif;
     margin-left: 250px;
     transition: 0.5s;
     margin-bottom: 40px;
@@ -29,20 +30,20 @@ body {
 
 #yesButton {
     position: absolute;
-    font-family: "Cupid Love", Arial, sans-serif;
     margin-right: 250px;
     margin-bottom: 40px;
 }
 
 .header_text {
-    font-family: "Cupid Love", Arial, sans-serif;
     font-size: 70px;
-    font-weight:normal;
-    font-style:normal;
     color: rgb(76, 69, 69);
     text-align: center;
     margin-top: 20px;
     margin-bottom: 0px;
+}
+
+body, #noButton, #yesButton, .header_text {
+    font-family: 'Cupid Love', Arial, sans-serif;
 }
 
 .buttons {
