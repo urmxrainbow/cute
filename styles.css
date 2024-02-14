@@ -6,8 +6,8 @@
 }   */
 @font-face {
     font-family: 'Cupid Love';
-    src: url('fonts/CupidLove.woff2') format('woff2'),
-         url('fonts/CupidLove.woff') format('woff');
+    src: url('fonts/cute_love-webfont.woff2') format('woff2'),
+         url('fonts/cute_love-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -35,10 +35,10 @@ body {
 }
 
 .header_text {
-    font-size: 80px;
+    font-size: 70px;
     color: rgb(76, 69, 69);
     text-align: center;
-    margin-top: 20px;
+    margin-top: 25px;
     margin-bottom: 0px;
 }
 
